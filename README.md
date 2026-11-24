@@ -2,55 +2,55 @@
 
 # ⚡ Morbi Optimizer 2.5 Pro
 
-**Windows için Gerçek Zamanlı Sistem Performans Motoru, Otomatik Oyun Modu, Canlı Bildirimler ve Özelleştirilebilir FPS HUD Widget**
+**Real-Time Windows Performance Engine, Automatic Game Booster, Live Telemetry Notifications & Custom On-Screen FPS HUD**
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-6366F1?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/Windows-10%20%2F%2011-06B6D4?style=for-the-badge&logo=windows&logoColor=white)](#)
 [![UI](https://img.shields.io/badge/UI-CustomTkinter%20Dark-121620?style=for-the-badge)](#)
-[![Build](https://img.shields.io/badge/Build-Single%20EXE%20(UAC%20Admin)-10B981?style=for-the-badge)](#tek-exe-derleme-pyinstaller)
+[![Build](https://img.shields.io/badge/Build-Single%20EXE%20(UAC%20Admin)-10B981?style=for-the-badge)](#building-a-single-exe-pyinstaller)
 [![License](https://img.shields.io/badge/License-MIT-F59E0B?style=for-the-badge)](LICENSE)
 
 <br />
 
-> **React / Shadcn / Tailwind** esintili modern karanlık arayüzü, arka planda sürekli çalışan akıllı RAM ve süreç optimizasyon motoru, oyun başladığında ekranda beliren **canlı telemetri bildirim kartı** ve **ekran üstü FPS HUD widget'ı** ile sisteminizi her an maksimum performansta tutar.
+> A sleek **React / Shadcn / Tailwind-inspired** dark desktop dashboard featuring a continuous background RAM & process optimizer, automatic game detection with **live floating toast notifications**, and a **customizable on-screen FPS & hardware HUD widget**.
 
 </div>
 
 ---
 
-## ✨ Öne Çıkan Özellikler
+## ✨ Key Features
 
-| Kategori | Özellikler |
+| Category | Capabilities |
 | :--- | :--- |
-| 🎨 **Modern Karanlık Arayüz** | `#090B10` obsidian tema, sol navigasyonlu 5 sayfalık dashboard, özel Canvas dairesel göstergeler (`RadialGauge`) ve 60 saniyelik canlı alan/çizgi grafikleri (`SparklineChart`). |
-| 🚀 **Sürekli Optimizasyon Motoru** | RAM eşiği aşıldığında veya belirlenen periyotta (1 / 3 / 5 / 10 dk) `EmptyWorkingSet` ile arka plan belleğini otomatik temizler; oturum boyunca boşaltılan toplam MB'ı canlı takip eder. |
-| 🎮 **Otomatik Oyun Modu** | **46+ yerleşik oyun** + özel `.exe` ekleme desteği. Oyun açıldığında CPU & I/O önceliğini `HIGH_PRIORITY_CLASS` yapar, **Yüksek / Ultra Performans güç planına** geçer, **1ms düşük gecikme zamanlayıcısını** (`timeBeginPeriod`) açar ve oyun kapanınca ayarları geri yükler. |
-| 🔔 **Oyun Yakalandı Bildirimi** | Oyun başladığında ekran köşesinde açılan koyu cam tasarımlı bildirim kartı; oyun adı, PID, boşaltılan RAM ile **canlı FPS, CPU, RAM, GPU değerlerini** gösterir ve **12 saniye** (5–20 sn ayarlanabilir) sonunda yumuşakça kaybolur. |
-| 📊 **Custom FPS & Performans HUD** | Her zaman üstte duran, sürüklenebilir, saydamlığı ayarlanabilir ekran üstü widget. **3 görünüm modu** (`Detaylı + Mini FPS Grafiği`, `Kompakt Bar`, `Minimal Sayaç`) ve Windows DWM üzerinden gerçek zamanlı FPS, Frametime (ms), 1% Low, Hz, CPU, RAM, NVIDIA GPU (°C/VRAM) ve Ping takibi. |
-| 🧹 **Tek Tıkla Sistem Araçları** | `⚡ Turbo Boost`, manuel RAM boşaltma, `%TEMP%` temizleyici, DNS önbelleği sıfırlama (`ipconfig /flushdns`), Windows Güç Planı değiştirici ve en çok RAM kullanan süreçleri tek tek optimize etme yöneticisi. |
-| 🛡 **Otomatik Yönetici & Başlangıç** | `--uac-admin` gömülü manifest ile tek `.exe` otomatik yönetici olarak başlar. Windows **Görev Zamanlayıcı (`/RL HIGHEST`)** entegrasyonu sayesinde bilgisayar açıldığında UAC engeline takılmadan sistem tepsisinde (`--minimized`) sessizce başlar. |
+| 🎨 **Modern Dark Dashboard** | `#090B10` obsidian dark theme, 5-page sidebar navigation, custom Canvas circular gauges (`RadialGauge`), and 60-second multi-series live area/line charts (`SparklineChart`). |
+| 🚀 **Continuous Optimization Engine** | Automatically trims background working sets (`EmptyWorkingSet`) whenever RAM crosses your threshold or on a scheduled interval (1 / 3 / 5 / 10 min), tracking total freed MB per session. |
+| 🎮 **Automatic Game Mode** | Supports **46+ built-in games** plus custom `.exe` entries. Automatically elevates CPU & I/O priority (`HIGH_PRIORITY_CLASS` / `IOPRIO_HIGH`), switches to **High / Ultimate Performance power plan**, activates a **1ms low-latency system timer** (`timeBeginPeriod`), throttles background bloat, and cleanly restores everything on exit. |
+| 🔔 **Live Game Detected Toast** | A floating dark-glass notification banner appears automatically when a game launches—displaying game name, PID, freed RAM, optimization badges, and **live-updating FPS, CPU, RAM, and GPU metrics** before smoothly fading out after **12 seconds** (configurable 5–20s). |
+| 📊 **Custom On-Screen FPS HUD** | Always-on-top, draggable, opacity-adjustable floating overlay with **3 layouts** (`Detailed + Live FPS Graph`, `Compact Bar`, `Minimal Counter`). Tracks real-time Windows DWM FPS, Frametime (ms), 1% Low, Monitor Hz, CPU, RAM, NVIDIA GPU (°C / VRAM), and Ping. |
+| 🧹 **One-Click System Tools** | `⚡ Turbo Boost`, instant RAM cleaner, `%TEMP%` junk cleaner, DNS cache flush (`ipconfig /flushdns`), Windows Power Plan switcher, and a live top-RAM process manager. |
+| 🛡 **Auto-Admin & Windows Startup** | Compiles into a standalone single `.exe` with an embedded `--uac-admin` (`requireAdministrator`) manifest. Integrates with **Windows Task Scheduler (`/RL HIGHEST`)** so it launches silently to the system tray (`--minimized`) at logon without UAC prompts. |
 
 ---
 
-## 🧭 Arayüz Sayfaları
+## 🧭 Dashboard Overview
 
-1. **⚡ Genel Bakış (`Dashboard`)**:
-   - Üst aksiyon kartı (`Turbo Boost`, `RAM Temizle`, aktif güç planı, 1ms zamanlayıcı ve oyun modu rozetleri).
-   - 4 adet canlı dairesel gösterge: **CPU** (`%`, MHz, çekirdek), **RAM** (`%`, GB), **GPU** (`%`, °C, VRAM), **Anlık FPS** (Frametime ms, Hz).
-   - 60 saniyelik **Canlı Sistem Telemetrisi** (CPU/RAM/GPU) ve **Canlı FPS** grafikleri, Ağ/Disk I/O, Ping ve son optimizasyon günlüğü.
-2. **🎮 Oyun Modu (`Game Booster`)**:
-   - Aktif oyun durumu, **🔔 Oyun Bildirimini Test Et** butonu, tüm otomatik oyun optimizasyonu anahtarları ve özel `.exe` oyun kütüphanesi yöneticisi.
+1. **⚡ Overview (`Dashboard`)**:
+   - Hero status banner with quick `Turbo Boost` and `Clean RAM` actions plus active power plan, 1ms timer, and Game Mode badges.
+   - 4 live circular gauges: **CPU** (`%`, MHz, cores), **RAM** (`%`, GB), **GPU** (`%`, °C, VRAM), and **Live FPS** (Frametime ms, Hz).
+   - 60-second **System Telemetry** (CPU/RAM/GPU) and **Live FPS** charts, Network/Disk I/O, Ping, and recent optimization feed.
+2. **🎮 Game Mode (`Game Booster`)**:
+   - Active game detection panel, **🔔 Test Game Notification** button, granular automation toggles, and custom `.exe` library manager.
 3. **📊 FPS & HUD Widget**:
-   - Canlı FPS / Ortalama FPS / 1% Low / Frametime / Ekran Yenileme Hızı (Hz) analizi.
-   - HUD aç/kapa, stil seçimi (`Detaylı`, `Kompakt`, `Minimal`), konum seçimi, saydamlık kaydırıcısı, konum kilidi ve metrik filtreleri.
-4. **🚀 Performans & Temizlik**:
-   - Sürekli optimizasyon ayarları (RAM eşiği `%55–%95`, periyodik temizlik aralığı), tek tık araçlar, Windows güç planı seçici ve canlı süreç yöneticisi.
-5. **⚙ Ayarlar & Günlük**:
-   - **Windows Başlangıcında Otomatik Başlat (Yönetici)** ve **Tepsiye Gizli Başlat** kontrolleri, bildirim süresi/konumu ayarları ve tam ekran optimizasyon günlüğü.
+   - Live FPS, Average FPS, 1% Low FPS, Frametime, and Display Refresh Rate (Hz) readout.
+   - Full overlay customization: toggle HUD, layout style (`Detailed`, `Compact`, `Minimal`), screen corner presets, opacity slider, position lock, and per-metric visibility switches.
+4. **🚀 Performance & Cleaner**:
+   - Continuous optimizer controls (RAM threshold `55%–95%`, periodic clean interval), one-click utilities, Windows Power Plan switcher, and per-process RAM trim / priority manager.
+5. **⚙ Settings & Logs**:
+   - **Start with Windows (Task Scheduler — Admin)** and **Start Minimized to Tray** toggles, notification duration/position controls, and a full real-time optimization log console.
 
 ---
 
-## 🏗 Mimari Yapı
+## 🏗 Architecture
 
 ```mermaid
 flowchart LR
@@ -63,57 +63,57 @@ flowchart LR
     UI --> CFG
 ```
 
-### Dosya Yapısı
+### Project Structure
 
 ```text
 optimiser/
-├── optimiser.py            # Ana masaüstü uygulaması, 5 sayfalık dashboard ve sistem tepsisi
-├── engine.py               # Sürekli RAM temizleme, oyun algılama, güç planı ve 1ms zamanlayıcı motoru
-├── telemetry.py            # CPU, RAM, NVIDIA GPU (nvidia-smi), DWM FPS/Frametime, Disk/Ağ ve Ping toplayıcı
-├── overlays.py             # Canlı Oyun Yakalandı bildirim kartı (Toast) ve ekran üstü FPS HUD widget'ı
-├── widgets.py              # Özel Canvas RadialGauge, SparklineChart, GlassCard, PillBadge ve ToggleRow
-├── startup.py              # Windows Görev Zamanlayıcı (/RL HIGHEST) ve Kayıt Defteri başlangıç yöneticisi
-├── config.py               # Tema renk paleti, 46+ varsayılan oyun listesi ve kalıcı ayar yönetimi
-├── morbi.ico               # Özel uygulama ikonu
-├── MorbiOptimizerPro.spec  # PyInstaller tek dosya derleme yapılandırması
-├── requirements.txt        # Python bağımlılıkları
-└── LICENSE                 # MIT Lisansı
+├── optimiser.py            # Main desktop application, 5-page dashboard & system tray
+├── engine.py               # Continuous RAM cleaner, game booster, power plan & 1ms timer engine
+├── telemetry.py            # CPU, RAM, NVIDIA GPU (nvidia-smi), DWM FPS/Frametime, Disk/Net & Ping collector
+├── overlays.py             # Live Game Detected Toast notification & floating FPS HUD overlay
+├── widgets.py              # Custom Canvas RadialGauge, SparklineChart, GlassCard, PillBadge & ToggleRow
+├── startup.py              # Windows Task Scheduler (/RL HIGHEST) & Registry startup manager
+├── config.py               # Theme palette, 46+ default games list & persistent configuration loader
+├── morbi.ico               # Custom application icon
+├── MorbiOptimizerPro.spec  # PyInstaller single-file build specification
+├── requirements.txt        # Python dependencies
+└── LICENSE                 # MIT License
 ```
 
 ---
 
-## 🛠 Kurulum ve Çalıştırma
+## 🛠 Installation & Usage
 
-### Gereksinimler
-- **İşletim Sistemi:** Windows 10 veya Windows 11 (64-bit)
-- **Python:** 3.10 veya üzeri (kaynak koddan çalıştırmak için)
-- **GPU Telemetrisi:** NVIDIA ekran kartları için `nvidia-smi` otomatik algılanır (yoksa uygulama sorunsuz şekilde CPU/RAM/FPS ile çalışmaya devam eder)
+### Prerequisites
+- **OS:** Windows 10 or Windows 11 (64-bit)
+- **Python:** 3.10 or higher (for running from source)
+- **GPU Telemetry:** NVIDIA GPUs are automatically detected via `nvidia-smi` (gracefully degrades on non-NVIDIA systems)
 
-### Kaynak Koddan Çalıştırma
+### Running from Source
 
 ```powershell
-# 1. Depoyu klonlayın
-git clone https://github.com/KULLANICI_ADINIZ/morbi-optimizer.git
+# 1. Clone the repository
+git clone https://github.com/YOUR_USERNAME/morbi-optimizer.git
 cd morbi-optimizer
 
-# 2. Bağımlılıkları yükleyin
+# 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Uygulamayı başlatın (Yönetici terminali önerilir)
+# 3. Launch the application (Administrator terminal recommended)
 python optimiser.py
 ```
 
 > [!TIP]
-> Uygulamayı doğrudan sistem tepsisinde sessizce başlatmak için `--minimized` parametresini kullanabilirsiniz:
+> Launch directly minimized in the system tray using the `--minimized` flag:
 > ```powershell
 > python optimiser.py --minimized
 > ```
 
 ---
 
-## 📦 Tek EXE Derleme (PyInstaller)
+## 📦 Building a Single EXE (PyInstaller)
 
-Projeyi **otomatik yönetici yetkili (`--uac-admin`)**, konsolsuz ve tamamen bağımsız tek bir `.exe` dosyasına dönüştürmek için:
+Build a completely standalone, windowless, **auto-elevated (`--uac-admin`)** single `.exe` executable:
 
 ```powershell
 pip install pyinstaller
@@ -127,25 +127,25 @@ python -m PyInstaller --noconfirm --clean --onefile --windowed --uac-admin `
   optimiser.py
 ```
 
-Derleme tamamlandığında tek dosya çıktısı `dist/MorbiOptimizerPro.exe` konumunda oluşturulur.
+The compiled executable will be available at `dist/MorbiOptimizerPro.exe`.
 
 > [!NOTE]
-> Tek `.exe` modunda kullanıcı ayarları otomatik olarak `%APPDATA%\MorbiOptimizer\morbi_config.json` dosyasında saklanır. Böylece `.exe` dosyasını dilediğiniz klasöre taşıyabilirsiniz.
+> When running as a frozen `.exe`, user preferences are persisted in `%APPDATA%\MorbiOptimizer\morbi_config.json`, allowing you to move the standalone executable to any folder without losing settings.
 
 ---
 
-## 🤝 Katkıda Bulunma
+## 🤝 Contributing
 
-Katkılarınız memnuniyetle karşılanır!
+Contributions, issues, and feature requests are welcome!
 
-1. Projeyi fork'layın
-2. Yeni bir özellik dalı oluşturun (`git checkout -b feature/yeni-ozellik`)
-3. Değişikliklerinizi commit edin (`git commit -m "feat: yeni özellik eklendi"`)
-4. Dalınızı push edin (`git push origin feature/yeni-ozellik`)
-5. Bir **Pull Request** açın
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m "feat: add amazing feature"`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a **Pull Request**
 
 ---
 
-## 📄 Lisans
+## 📄 License
 
-Bu proje **MIT Lisansı** altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına göz atabilirsiniz.
+Distributed under the **MIT License**. See [LICENSE](LICENSE) for more information.

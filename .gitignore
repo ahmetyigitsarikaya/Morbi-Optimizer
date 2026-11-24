@@ -1,0 +1,29 @@
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# PyInstaller build outputs
+build/
+dist/
+*.manifest
+
+# Local user runtime configuration & logs
+morbi_config.json
+*.log
+
+# IDE & editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
